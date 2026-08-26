@@ -21,17 +21,14 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.4.1'
-        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.8.4'
     }
 }
 
-Properties localProperties = new Properties()
-localProperties.load(file('local.properties').newDataInputStream())
+
 
 String VERSION = '2.0.0'
 
 apply plugin: 'com.android.library'
-apply plugin: 'com.jfrog.bintray'
 apply plugin: 'maven-publish'
 
 repositories {
